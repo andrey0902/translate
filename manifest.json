@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name":"Habrahabr Demo",
+  "version":"2",
+  "description":"Demo plugin",
+  "content_scripts":[
+    {
+      "matches":["http://habrahabr.ru/*"],
+      "matches":["https://habrahabr.ru/*"],
+      "css":["style.css"],
+      "js":["jquery.js", "script.js"]
+    }
+  ],
+
+  "permissions": [
+    "https://translate.google.com/*",
+    "contextMenus"
+  ],
+
+  "browser_action": {
+    "default_title": "Open translator",
+    "default_popup": "popup.html"
+  },
+
+  "background": {
+    "page": "background.html"
+  },
+  "web_accessible_resources": [
+  "https://use.fontawesome.com/*"
+  ]
+}
