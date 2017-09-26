@@ -12,7 +12,12 @@ header
     height: 45px;
     margin-bottom: 10px;
     border-bottom: 1px solid #e1ddd8;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 55;
+    background: #fff;
 }
 
 #logo
@@ -73,6 +78,10 @@ label
     display: none;
 
 }
+.default-text, .new-text{
+    font-size: 18px;
+    color: #252525;
+}
 .clear{
     background-image: url('back-black.png');
     right: 20px;
@@ -99,4 +108,10 @@ label
 .default-text p::first-letter, .new-text p::first-letter{
     display: block;
     text-transform: uppercase;
+}
+#translate {
+    padding-top: 48px;
+}
+#content{
+    padding-top: 60px;
 }

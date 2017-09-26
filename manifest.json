@@ -3,18 +3,18 @@
   "name":"Habrahabr Demo",
   "version":"2",
   "description":"Demo plugin",
-  "content_scripts":[
-    {
-      "matches":["http://habrahabr.ru/*"],
-      "matches":["https://habrahabr.ru/*"],
-      "css":["style.css"],
-      "js":["jquery.js", "script.js"]
-    }
-  ],
 
+  "content_scripts":[{
+    "matches":["http://*/*","https://*/*"],
+    "css": ["mystyles.css"],
+    "js":["script.js"]
+  }],
   "permissions": [
     "https://translate.google.com/*",
-    "contextMenus"
+    "contextMenus",
+    "tabs",
+    "activeTab",
+    "storage"
   ],
 
   "browser_action": {
