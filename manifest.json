@@ -7,7 +7,7 @@
   "content_scripts":[{
     "matches":["http://*/*","https://*/*"],
     "css": ["mystyles.css"],
-    "js":["script.js"]
+    "js":["jquery.js", "script.js"]
   }],
   "permissions": [
     "https://translate.google.com/*",
@@ -26,6 +26,7 @@
     "page": "background.html"
   },
   "web_accessible_resources": [
-  "https://use.fontawesome.com/*"
+  "https://use.fontawesome.com/*",
+    "translate.png"
   ]
 }

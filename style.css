@@ -69,6 +69,7 @@ label
 .clear, .copy{
     height: 20px;
     width: 20px;
+    padding: 4px;
     cursor: pointer;
     transition: .4s ease;
     position: absolute;
